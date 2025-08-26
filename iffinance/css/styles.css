@@ -34,11 +34,11 @@ header nav ul li{
 
 }
 
-header nav ul li a:hover{
-    
+header nav ul li a:hover, .active{ 
     color: #ec7b11;
     border-bottom: 2px solid #ec7b11;
 }
+
 /*
 header nav{
     margin: O O O auto;
