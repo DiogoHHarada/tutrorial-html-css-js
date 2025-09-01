@@ -51,7 +51,7 @@ header img{
 
 .flexrow{
     display: flex;
-    gap: 100px;
+    gap: 10px;
 }
 
 .content .flexrow{
@@ -76,16 +76,40 @@ footer {
 }
 
 .card{
+    margin: 10px;
     height: 200px;
     width: 400px;
     background-color: #ec7b11;
     border-radius: 25px;
     
+    
 }
 
 .top {
+    display: flex;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     background-color: black;
     height: 45px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.top-conteudo {
+    display: flex;
+   justify-content:space-between;
+   padding: 0px 10px;
+}
+
+.valor {
+    display: flex;
+    align-items: center;
+}
+
+.bottom-conteudo{
+    display: flex;
+    padding: 0px 10px;
+    justify-content: space-between;
+
 }
