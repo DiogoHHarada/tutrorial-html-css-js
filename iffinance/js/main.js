@@ -18,25 +18,22 @@ function addTicker(event){
     const total = valor * ativos
 
     const card = `
-        main class="card">
-                <div class="top">
-                     <h2><span style="color:#ec7b11;">IF</span>Finance</h2>
-                </div>
-                <div class="top-conteudo">
-                    <div class="valor">
-                        <h2>US$ ${valor}</h2>
-                        <img src="img/seta vermelha.png" height="40px">  
-                    </div>
-                    <h2>${ticker}</h2>
-                </div>
-                <div class="bottom-conteudo"> 
-                    <h2>N° Ativos:${ativos}</h2>
-                    <h2>US$ ${total} </h2>
-                </div>     
+        <div class="card-stock">
+            <header>
+                <h2>${ticker}</h2>
+                <h3>${bolsa}</h3>
+            </header>
+            <main>
+                <span>▲ US$ ${valor}</span>
             </main>
+            <footer>
+                <span>Ativos: <span>${ativos}</span></span>
+                <span>US$ ${total}</span>
+            </footer>
+        </div>
     `
 
-    const cardlist = document.getElementById("cardlist")
-    cardlist.innerHTML += card
+    const cards = document.getElementById("cards")
+    cards.innerHTML += card
     closeModal()
 }
