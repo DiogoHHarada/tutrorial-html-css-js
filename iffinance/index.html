@@ -16,13 +16,13 @@
                 <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="quem-somos.html">Quem Somos</a></li>
                 <li><a href="contatos.html">Contatos</a></li>
+                <li><button onclick="openModal()">Adicionar</button></li>
             </ul>
         </nav>
     </div>
    </header>
-   <div class="content">
+   <div id="cardlist">
         <div class="flexrow">
-
             <main class="card">
                  
                 <div class="top">
@@ -130,11 +130,37 @@
             </main>
         </div>
    </div>
-   
    <footer>
     <div class="wrapper" style="height: 120px;">
 
     </div>
    </footer>
+
+   <div class="modal">
+        <main>
+            <h1>Cadastrar</h1>
+            <form onsubmit="addTicker(event)">
+
+                <label >Ticker</label>
+                <input type="text" name="ticker" id="ticker">
+
+                <label>Bolsa</label>
+                <select name="bolsa" id="bolsa">
+                    <option value="Nasdaq"></option>
+                    <option value="NYSE"></option>
+                </select>
+
+                <label>Valor</label>
+                <input type="text" name="valor" id="valor"> 
+                
+                <label>Ativos</label>
+                <input type="text" name="ativos" id="ativos">
+
+                <input type="submit" value="Cadastrar">
+                <button onclick="closeModal()">Fechar</button>
+            </form>
+        </main>
+   </div>
 </body>
+<script src="js/main.js"></script>
 </html>
