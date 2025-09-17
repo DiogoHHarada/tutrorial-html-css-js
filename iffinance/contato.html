@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>IFFinance - Contatos</title>
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+    <header>
+        <div class="wrapper" style="height: 90px;">
+            <div class="flexrow" style="height: 90px;">
+                <img src="img/logo.svg">
+                <h1><span style="color:hsl(29, 87%, 50%);">IF</span>Finance</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="quem-somos.html">Quem Somos</a></li>
+                    <li><a href="contato.html"class="active">Contato</a></li>
+                    <li><button onclick="openModal('#add')">Adicionar</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="wrapper">
+        <div class="flexrow">
+            <main>
+                <h1>Contato</h1>
+                
+                <form action="">
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" id="nome">
+                    <br>
+                    <label for="password">Senha</label>
+                    <input type="password" name="pass" id="pass">
+                    <br>
+                    <input type="checkbox" name="news" id="news">
+                    <label for="news">Deseja receber nossos emails de novidades?</label>
+                    <br>
+                    <label for="menssage">Menssagem</label>
+                    <br>
+                    <textarea name="menssage" id="menssage"></textarea>
+                    <br>
+                    <p>Qual sua bolsa preferida?</p>
+                    <input type="radio" name="bolsa" id="nyse">
+                    <label for="nyse">NYSE</label>
+                    <br>
+                    <input type="radio" name="bolsa" id="nasdaq">
+                    <label for="nasdaq">Nasdaq</label>
+                    <br>
+                    <input type="radio" name="bolsa" id="b3">
+                    <label for="b3">Ibovespa</label>
+                    <br>
+                    <input type="submit" value="Enviar">
+                </form>
+            </main>
+        </div>
+    </div>
+
+    <footer>
+        <div class="wrapper" style="height: 120px;">
+
+        </div>
+    </footer>
+
+</body>
+<script src="js/main.js"></script>
+</html>
